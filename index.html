@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AudioZone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="f a-c j-sb f-dc">
+    <!-- Navigation  Starts-->
+    <header class="f j-sb a-c c-w">
+        <div class="header-left f j-sb a-c">
+            <div class="left f j-sb a-c ">
+                <div class="logo tr cr-p"><img src="Logo/logo.png"></div>
+                <div class="text  f j-c a-fs f-dc fs-20">
+                    <span class="upper ">Audio</span>
+                    <span class="lower ">Zone</span>
+                </div>
+            </div>
+            <div class="right c-w fs-12 cr-p">
+                <p>Favourites</p>
+            </div>
+        </div>
+        <div class="header-right f j-sb a-c ">
+            <div class="searchBar f j-sb ">
+                <i class="fa fa-search cr-p" aria-hidden="true"></i>
+                <input type="search" placeholder="Search" class="tr fs-12">
+                <i class="fa fa-microphone cr-p" aria-hidden="true"></i>
+            </div>
+            <div class="bell">
+                <i class="fa fa-bell cr-p fs-20" aria-hidden="true"></i>
+            </div>
+            <div class="logo  cr-p">
+                <img src="ArtistImages/AP Dhillon.jpg" alt="">
+            </div>
+        </div>
+    </header>
+    <main class="f fw c-w">
+        <div class="container">
+            <div class="content-container f f-dc">
+                <div class="main-images f a-c j-sb">
+                    <img src="Front_page_images/front4.jpg" alt="">
+                    <img src="Front_page_images/front 2.jpg" alt="">
+                    <img src="Front_page_images/front 3.jpg" alt="">
+                </div>
+                <div class="latest-release ">
+                    <h5 class="heading">Latest Release</h5>
+                    <div class="set f fw a-c j-sb">
+                        <div class="song-item f a-c j-sb" id="1">
+                            <div class="left f a-c">
+                                <img src="Songsimg/1.jpg" alt="">
+                                <h5>Kesariya
+                                    <div class="Date">01 April 2023</div>
+                                </h5>
+                            </div>
+                            <div class="right f f-dc">
+                                <div class="dropdown">
+                                    <i class="fa fa-ellipsis-h c-p" aria-hidden="true"></i>
+                                    <div class="dropdown-content">
+                                        <ul>
+                                            <li>Play Now</li>
+                                            <li>Add </li>
+                                            <li>Remove</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <span class="time">4:28</span>
+                            </div>
+
+                        </div>
+                        <div class="song-item f a-c j-sb" id="2">
+                            <div class="left f a-c">
+                                <img src="Songsimg/2.jpg" alt="">
+                                <h5>Tu Maan Meri Jaan
+                                    <div class="Date">01 April 2023</div>
+                                </h5>
+                            </div>
+                            <div class="right f f-dc">
+                                <div class="dropdown">
+                                    <i class="fa fa-ellipsis-h c-p" aria-hidden="true"></i>
+                                    <div class="dropdown-content">
+                                        <ul>
+                                            <li>Play Now</li>
+                                            <li>Add </li>
+                                            <li>Remove</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <span class="time">3:14</span>
+                            </div>
+
+                        </div>
+                        <div class="song-item f a-c j-sb" id="3">
+                            <div class="left f a-c">
+                                <img src="Songsimg/3.jpg" alt="">
+                                <h5>Dil Diyan Gallan
+                                    <div class="Date">01 April 2023</div>
+                                </h5>
+                            </div>
+                            <div class="right f f-dc">
+                                <div class="dropdown">
+                                    <i class="fa fa-ellipsis-h c-p" aria-hidden="true"></i>
+                                    <div class="dropdown-content">
+                                        <ul>
+                                            <li>Play Now</li>
+                                            <li>Add </li>
+                                            <li>Remove</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <span class="time">4:20</span>
+                            </div>
+
+                        </div>
+                        <div class="song-item f a-c j-sb" id="4">
+                            <div class="left f a-c">
+                                <img src="Songsimg/4.jpg" alt="">
+                                <h5>Jhumme Jo Pathan
+                                    <div class="Date">01 April 2023</div>
+                                </h5>
+                            </div>
+                            <div class="right f f-dc">
+                                <div class="dropdown">
+                                    <i class="fa fa-ellipsis-h c-p" aria-hidden="true"></i>
+                                    <div class="dropdown-content">
+                                        <ul>
+                                            <li>Play Now</li>
+                                            <li>Add </li>
+                                            <li>Remove</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <span class="time">3:15</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popular-artists">
+                    <div class="h4 f a-c j-sb">
+                        <h4 class="fs-14">Popular Artists</h4>
+                        <div class="btns">
+                            <i class="fa fa-arrow-left" aria-hidden="true" id="pop_artists_left"></i>
+                            <i class="fa fa-arrow-right" aria-hidden="true" id="pop_artists_right"></i>
+                        </div>
+                    </div>
+                    <div class="artists f">
+                        <div class="artists-card f f-dc a-c">
+                            <img src="ArtistImages/King.jpg" alt="">
+                            <div class="artists-name">King</div>
+                        </div>
+                        <a href="SinglePlayList.html">
+                            <div class="artists-card f f-dc a-c">
+                                <img src="ArtistImages/Arijit Singh Cover.jpg" alt="">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                                <div class="artists-name">Arijit Singh</div>
+                            </div>
+                        </a>
+                        <div class="artists-card f f-dc a-c">
+                            <img src="ArtistImages/Pritam.jpg" alt="">
+                            <div class="artists-name">Pritam</div>
+                        </div>
+                        <div class="artists-card f f-dc a-c">
+                            <img src="ArtistImages/Atif Aslam.jpg" alt="">
+                            <div class="artists-name">Atif Aslam</div>
+                        </div>
+                        <div class="artists-card f f-dc a-c">
+                            <img src="ArtistImages/Selena Gomez.jpg" alt="">
+                            <div class="artists-name">Selena Gomez</div>
+                        </div>
+                        <div class="artists-card f f-dc a-c">
+                            <img src="ArtistImages/Jubin Nautiyal.jpg" alt="">
+                            <div class="artists-name">Jubin Nautiyal</div>
+                        </div>
+                        <div class="artists-card f f-dc a-c">
+                            <img src="ArtistImages/Guru Randhawa.jpg" alt="">
+                            <div class="artists-name">Guru Randhawa</div>
+                        </div>
+                        <div class="artists-card f f-dc a-c">
+                            <img src="ArtistImages/Shreya Ghoshal.jpg" alt="">
+                            <div class="artists-name">Shreya Ghoshal</div>
+                        </div>
+                        <div class="artists-card f f-dc a-c">
+                            <img src="ArtistImages/Darshan Raval.jpg" alt="">
+                            <div class="artists-name">Darshan Raval</div>
+                        </div>
+                        <div class="artists-card f f-dc a-c">
+                            <img src="ArtistImages/Arman Malik.jpg" alt="">
+                            <div class="artists-name">Arman Malik</div>
+                        </div>
+                        <div class="artists-card f f-dc a-c">
+                            <img src="ArtistImages/Neha Kakkar.jpg" alt="">
+                            <div class="artists-name">Neha Kakkar</div>
+                        </div>
+                        <div class="artists-card f f-dc a-c">
+                            <img src="ArtistImages/B Praak.jpg" alt="">
+                            <div class="artists-name">B Praak</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="diffSongs f a-c j-sa">
+                    <div class="stations">
+                        <div class="inner"></div>
+                        <div class="middle"></div>
+                        <div class="outer">
+                            <div class="white-circle">
+                                <div class="orange-circle"></div>
+                            </div>
+                            <span>Stations</span>
+                        </div>
+                    </div>
+                    <div class="categories f a-c j-sb fw">
+                        <div class="type">
+                            <h5>Love</h5>
+                            <img src="Categories/Romantic.jpg" alt="">
+                        </div>
+                        <div class="type">
+                            <h5>Hip Hop</h5>
+                            <img src="Categories/Hip Hop.jpg" alt="">
+                        </div>
+                        <div class="type">
+                            <h5>Classical</h5>
+                            <img src="Categories/Classical.jpg" alt="">
+                        </div>
+                        <div class="type">
+                            <h5>Pop</h5>
+                            <img src="Categories/Pop.jpg" alt="">
+                        </div>
+                        <div class="type">
+                            <h5>Road Trip</h5>
+                            <img src="Categories/Road Trip.jpg" alt="">
+                        </div>
+                        <div class="type">
+                            <h5>Classical</h5>
+                            <img src="Categories/Classical.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="latest-English">
+                    <h4 class="fs-14">Latest Hindi</h4>
+                    <div class="songs f a-c j-sb" id="1">
+                        <div class="song-box f f-dc">
+                            <img src="Songsimg/1.jpg" alt="">
+                            <div class="imagename">Kesariya</div>
+                            <span>April 1,2023</span>
+                        </div>
+                        <div class="song-box f f-dc" id="4">
+                            <img src="Songsimg/4.jpg" alt="">
+                            <div class="imagename">Jhumme Jo Pathan</div>
+                            <span>April 1,2023</span>
+                        </div>
+                        <div class="song-box f f-dc" id="2">
+                            <img src="Songsimg/2.jpg" alt="">
+                            <div class="imagename">Tu Maan Meri Jaan</div>
+                            <span>April 1,2023</span>
+                        </div>
+                        <div class="song-box f f-dc" id="3">
+                            <img src="Songsimg/3.jpg" alt="">
+                            <div class="imagename">Dil Diyan Gallan Cover</div>
+                            <span>April 1,2023</span>
+                        </div>
+                        <div class="song-box f f-dc" id="5">
+                            <img src="Songsimg/5.jpg" alt="">
+                            <div class="imagename">Filhaal 2</div>
+                            <span>April 1,2023</span>
+                        </div>
+                        <div class="song-box f f-dc" id="6">
+                            <img src="Songsimg/6.jpg" alt="">
+                            <div class="imagename">Lagti Lahore Di</div>
+                            <span>April 1,2023</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="latest-English mb-50">
+                    <h4 class="fs-14">Latest English</h4>
+                    <div class="songs f a-c j-sb">
+                        <div class="song-box f f-dc" id="=7">
+                            <img src="Songsimg/7.jpg" alt="">
+                            <div class="imagename">Let Me Love You</div>
+                            <span>April 1,2023</span>
+                        </div>
+                        <div class="song-box f f-dc" id="8">
+                            <img src="Songsimg/8.jpg" alt="">
+                            <div class="imagename">Despacito</div>
+                            <span>April 1,2023</span>
+                        </div>
+                        <div class="song-box f f-dc" id="9">
+                            <img src="Songsimg/9.jpg" alt="">
+                            <div class="imagename">Eyes Closed</div>
+                            <span>April 1,2023</span>
+                        </div>
+                        <div class="song-box f f-dc">
+                            <img src="Songsimg/All of The Girls You Loved Before Cover" alt="">
+                            <div class="imagename">All of The Girls You Loved Before</div>
+                            <span>April 1,2023</span>
+                        </div>
+                        <div class="song-box f f-dc" id="10">
+                            <img src="Songsimg/10.jpg" alt="">
+                            <div class="imagename">Calm Down</div>
+                            <span>April 1,2023</span>
+                        </div>
+                        <div class="song-box f f-dc">
+                            <img src="Songsimg/Goosebumps cover.jpg" alt="">
+                            <div class="imagename">Goosebumps</div>
+                            <span>April 1,2023</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="songs-list">
+            <h1>Queue</h1>
+          
+            <div class="playList">
+                <li class="songItem f a-c  cr-p c-p" id="1">
+                    <span>01</span>
+                    <img src="Songsimg/1.jpg" alt="">
+                    <h5>
+                        <div class="song-name c-w">Kesari</div>
+                        <div class="subTitle fs-10">Arijit Singh</div>
+                    </h5>
+                    <i class="fa fa-play play-icon" aria-hidden="true" id="1"></i>
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </li>
+                <li class="songItem f a-c cr-p c-p" id="2">
+                    <span>02</span>
+                    <img src="Songsimg/2.jpg" alt="">
+                    <h5>
+                        <div class="song-name c-w">Tu Maan Meri Jaan </div>
+                        <div class="subTitle fs-10">King</div>
+                    </h5>
+                    <i class="fa fa-play play-icon" aria-hidden="true" id="2"></i>
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </li>
+                <li class="songItem f a-c cr-p c-p" id="3">
+                    <span>03</span>
+                    <img src="" alt="">
+                    <h5>
+                        <div class="song-name c-w"></div>
+                        <div class="subTitle fs-10"></div>
+                    </h5>
+                    <i class="fa fa-play play-icon" aria-hidden="true"  id="3"></i>
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </li>
+                <li class="songItem f a-c cr-p c-p" id="4">
+                    <span>04</span>
+                    <img src="" alt="">
+                    <h5>
+                        <div class="song-name c-w"></div>
+                        <div class="subTitle fs-10"></div>
+                    </h5>
+                    <i class="fa fa-play play-icon" aria-hidden="true" id="4"></i>
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </li>
+                <li class="songItem f a-c cr-p c-p" id="5">
+                    <span>05</span>
+                    <img src="" alt="">
+                    <h5>
+                        <div class="song-name c-w"></div>
+                        <div class="subTitle fs-10"></div>
+                    </h5>
+                    <i class="fa fa-play play-icon" aria-hidden="true" id="5"></i>
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </li>
+                <li class="songItem f a-c cr-p c-p" id="6">
+                    <span>06</span>
+                    <img src="" alt="">
+                    <h5>
+                        <div class="song-name c-w"></div>
+                        <div class="subTitle fs-10"></div>
+                    </h5>
+                    <i class="fa fa-play play-icon" aria-hidden="true" id="6"></i>
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </li>
+                <li class="songItem f a-c cr-p c-p" id="7">
+                    <span>07</span>
+                    <img src="" alt="">
+                    <h5>
+                        <div class="song-name c-w"></div>
+                        <div class="subTitle fs-10"></div>
+                    </h5>
+                    <i class="fa fa-play play-icon" aria-hidden="true" id="7"></i>
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </li>
+                <li class="songItem f a-c cr-p c-p" id="8">
+                    <span>08</span>
+                    <img src="" alt="">
+                    <h5>
+                        <div class="song-name c-w"></div>
+                        <div class="subTitle fs-10"></div>
+                    </h5>
+                    <i class="fa fa-play play-icon" aria-hidden="true" id="8"></i>
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </li>
+                </li>
+                <li class="songItem f a-c cr-p c-p" id="9">
+                    <span>09</span>
+                    <img src="" alt="">
+                    <h5>
+                        <div class="song-name c-w"></div>
+                        <div class="subTitle fs-10"></div>
+                    </h5>
+                    <i class="fa fa-play play-icon" aria-hidden="true" id="9"></i>
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </li>
+                <li class="songItem f a-c cr-p c-p" id="10">
+                    <span>10</span>
+                    <img src="" alt="">
+                    <h5>
+                        <div class="song-name c-w"></div>
+                        <div class="subTitle fs-10"></div>
+                    </h5>
+                    <i class="fa fa-play play-icon" aria-hidden="true" id="10"></i>
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </li>
+
+
+            </div>
+        </div>
+        <div class="master-play f a-c j-sb">
+            <div class="left-master f">
+                <div class="wave" id="wave">
+                    <div class="wave1"></div>
+                    <div class="wave1"></div>
+                    <div class="wave1"></div>
+                </div>
+                <img src="Songsimg/1.jpg" alt="" id="poster">
+                <h5 id="song-title">
+                    <marquee width="90%" direction="left" height="15px" style="font-weight: 600; font-size: 10px;">
+                        Kesariya
+                    </marquee>
+                    <div class="artist-name">Arijit Singh</div>
+
+                </h5>
+                <div class="icon">
+                    <i class="fa fa-heart-o cr-p" aria-hidden="true"></i>
+                    <i class="fa fa-ban cr-p" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <div class="middle-master f f-dc">
+                <div class="controls f a-c j-c cr-p">
+                    <i class="shuffle fa fa-music f a-c" aria-hidden="true">next</i>
+                    <i class="fa fa-step-backward" aria-hidden="true" id="back"></i>
+                    <i class="fa fa-play" aria-hidden="true" id="PlaySong"></i>
+                    <i class="fa fa-step-forward" aria-hidden="true"  id="next"></i>
+                    <a href="" id="download-music" download ><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
+                </div>
+                <div class="progressbar f a-c j-c">
+                    <span id="currTime"></span>
+                    <div class="bar">
+                        <input type="range" id="song-bar" min="0" max="100">
+                        <div class="bar2" id="bar2"></div>
+                        <div class="currPosition"></div>
+                    </div>
+                    <span id="endTime"></span>
+
+                </div>
+
+            </div>
+            <div class="right-master f j-c ">
+                <i class="fa fa-desktop" aria-hidden="true"></i>
+                <div class="volume">
+                    <i class="fa fa-volume-up" aria-hidden="true" id="vol-icon"></i>
+                    <input type="range" id="vol" min="0" max="100">
+                    <div class="volbar" id="volBar"></div>
+                    <div class="dot" id="vol_dot"></div>
+                </div>
+                <i class="fa fa-expand" aria-hidden="true"></i>
+            </div>
+
+        </div>
+    </main>
+    <script src="script.js">
+        
+    </script>
+</body>
+
+</html>

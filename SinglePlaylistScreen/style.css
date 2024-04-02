@@ -1,0 +1,736 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    transition:all .2s ease-in;
+    
+}
+body{
+    --primary-color:white;
+    background-color: rgb(12 16 39);
+}
+
+/* Utility Classes */
+
+/* Flex */
+.f{
+    display: flex;
+}
+.fw{
+    flex-wrap: wrap;
+}
+.f-dc{
+    flex-direction: column;
+}
+
+/* Align Itmes */
+.a-c{
+    align-items: center;
+}
+.a-fs{
+    align-items: flex-start;
+}
+.a-fe{
+    align-items: flex-end;
+}
+
+/* Justify Items */
+.j-c{
+    justify-content: center;
+}
+.j-sb{
+    justify-content: space-between;
+}
+.j-sa{
+    justify-content: space-around;
+}
+.j-se{
+    justify-content: space-evenly;
+}
+.j-fe{
+    justify-content: flex-end;
+}
+.j-fs{
+    justify-content: flex-start;
+}
+
+/* Text */
+
+.t-c{
+    text-align:center;
+}
+.t-s{
+    text-align:start;
+}
+
+/* Color */
+.c-w{
+    color:white;
+}
+.c-p{
+    color: #a6a8b6;
+}
+/* Font-size */
+.fs-20{
+    font-size: 20px;
+}
+.fs-17
+{
+    font-size: 17px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-10{
+    font-size: 10px;
+}
+.fs-12{
+    font-size: 12px;
+}
+.fs-25{
+    font-size: 25px;
+}
+
+.cr-p{
+    cursor: pointer;
+}
+.tr{
+    background-color: transparent;
+}
+
+/* Padding */
+.p-20{
+    padding: 20px;
+}
+.pt-50{
+    padding-top: 50px;
+}
+/* Margin */
+.m-10{
+    margin: 10px;
+}
+.mb-2{
+    margin-bottom: 5px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+
+
+
+/* CSS of header  Starts*/
+.logo img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.logo img:hover {
+    transform: scale(1.2);
+    transition: all .2sec ease-in;
+}
+
+.upper {
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+
+.upper:hover {
+    color: #77767b;
+}
+
+.lower:hover {
+    color: #4729b5;
+}
+
+header {
+    width: 90%;
+    height: 8%;
+    margin: 0px 25px;
+    position: fixed;
+    z-index: 100;
+    background-color:rgb(12 16 39);
+}
+
+header .header-left {
+    width: 320px;
+    height: 100%;
+}
+
+header .header-left .left {
+    width: 150px;
+    height: 100%;
+}
+
+header .header-left .left .text {
+    width: 85px;
+    height: 60px;
+    font-size: 1rem;
+}
+
+header .header-right {
+    width: 550px;
+    height: 100%;
+}
+
+header .header-right .searchBar {
+    width: 40%;
+    height: 70%;
+    padding: 8px;
+    background-color: #12193e;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    text-align: left;
+}
+
+input[type="search"] {
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.searchBar i:hover {
+    transform: scale(1.1);
+
+}
+
+.right:hover {
+    transform: scale(1.1);
+    color: rgb(112, 171, 223);
+}
+
+/* CSS of header Ends */
+
+/* CSS of container */
+.container{
+    position: absolute;
+    width: 90%;
+    top: 10%;
+    height:180vh;
+    margin: 3px auto;
+}
+.left-container{
+    width: 70%;
+    height: 100%;
+    padding: 1% 2%;
+}
+
+.image{
+    height: 100%;
+    width: 40%;
+    
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, #12193e,40%,transparent);
+    cursor: pointer;
+}
+.image img:hover{
+    box-shadow:1px 1px 5px rgb(200, 170, 249);
+}
+.content{
+    height: 100%;
+    width: 60%;
+    color: #a6a8b6;
+    padding: 5% 2%;
+}
+
+/* CSS Banner starts*/
+.banner{
+    height: 300px;
+    width: 100%;
+    background-color: #141b41;
+}
+.Artist-Name
+{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+.band-name{
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+.about{
+    font-family: sans-serif ;
+    justify-content: center;
+    font-size: 12px;
+}
+.down{
+    margin-top:50px;
+}
+.play button{
+    height: 40px;
+    width: 130px;
+    background-image: linear-gradient(to right,#4729b5, #c348df);
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 17px;
+    opacity: 1;
+    cursor: pointer;
+    
+}
+.play button:hover{
+    box-shadow:1px 1px 5px white;
+}
+.follow button{
+    height: 40px;
+    width: 130px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+}
+.follow button:hover{
+    box-shadow:1px 1px 6px white;
+}
+.detail{
+    font-size: 13px;
+}
+
+.banner-song-list{
+ 
+    height: 700px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.songs{
+    margin: 5px;
+    height:10%;
+    width: 100%;
+    background-color: #1a1e33;
+    color: #a6a8b6;
+    cursor: pointer;
+}
+
+.songs:hover{
+    background-color: #202439;
+}
+.count{
+    margin:0px 10px ;
+    font-size: 12px;
+}
+.song-items{
+    height: 50px;
+    width: 50px;
+    align-items: center;
+}
+.song-items img{
+    height: 100%;
+    width: 100%;
+    z-index:3;
+}
+.song-infor{
+    height: 50px;
+    width: 150px;
+    font-size: 10px;
+    margin: auto 10px;
+}
+.s-name{
+    font-family: 'Noto Sans', sans-serif;
+}
+.a-name{
+    font-family: 'Poppins';
+    font-weight: 100;
+}
+/* CSS Banner ends*/
+
+/* CSS Queue starts */
+.queue{
+    width: 30%;
+    height: 180vh;
+    
+}
+.queue-top{
+    height:350px;
+    width: 100%;
+}
+.subheading{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+.lists{
+    height:80%;
+    width: 100%;
+}
+.items{
+    height:33%;
+    width:100%;
+}
+.song-item img{
+    height: 80px;
+    width: 100px;
+    cursor: pointer;
+}
+.song-item img:hover{
+    box-shadow:1px 1px 5px white;
+}
+
+.queue-bottom{
+    height: 45%;
+    width: 100%;
+    margin-top: 10px;
+}
+.queue-bottom .songs{
+    background-color: transparent;
+}
+/* CSS of music System */
+.music-system{
+    background-color: rgb(40 40 40);
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    color: white;
+    z-index: 10;
+    bottom: 0px;
+}
+
+.song-details{
+    height:100%;
+    width: 25%;
+    position: relative;
+    display: flex;
+    margin:auto 5%;
+}
+.song-cover-img{
+    height: 100%;
+    width: 30%;
+    align-items: center;
+}
+.song-cover-img img{
+    height: 90%;
+    width: 90%;
+    padding: 5%;
+    cursor: pointer;
+}
+.song-info{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+}
+.song-name{
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+
+}
+.song-artist{
+    height: 50%;
+    width: 100%;
+    font-weight: 100;
+    overflow: hidden;
+}
+
+.heart,.plus {
+    margin: 10px;
+}
+.heart i , .plus i{
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.heart:hover, .plus:hover{
+    color: white;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2f2752;
+    min-width: 70px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    top: 0px;
+    left: -10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content li{
+    list-style: none;
+    padding: 5px 0px;
+    margin: 0px 0px;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content li:hover{
+    background-color: #141b41;
+  }
+
+/*CSS of master Play*/
+.master-play {
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(40 40 40);
+    bottom: 0px;
+    padding: 0px 20px;
+    z-index: 10;
+}
+
+.master-play .wave {
+    width: 30px;
+    height: 30px;
+    padding-bottom: 4px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.master-play .wave .wave1 {
+    width: 3px;
+    height: 10px;
+    background-color: rgb(125, 240, 125);
+    margin-right: 3px;
+    border-radius: 8px 8px 0px 0px;
+    animation: unset;
+}
+
+.master-play .wave .wave1:nth-child(2) {
+    height: 14px;
+    margin-right: 3.5px;
+    animation-delay: .4s;
+}
+
+.master-play .wave .wave1:nth-child(3) {
+    height: 8px;
+    animation-delay: .8s;
+}
+
+/*Javascript*/
+.master-play .active1 .wave1 {
+    animation: wave 0.5s ease-in-out infinite;
+}
+
+.master-play .active1 .wave1:nth-child(2) {
+    animation-delay: .4s;
+}
+
+.master-play .active1 .wave1:nth-child(3) {
+
+    animation-delay: .8s;
+}
+
+@keyframes wave {
+    0% {
+        height: 10px;
+    }
+
+    50% {
+        height: 15px;
+    }
+
+    100% {
+        height: 10px;
+    }
+}
+
+.master-play img {
+    width: 40px;
+    height: 40px;
+}
+
+.master-play h5 {
+    width: 80px;
+    margin-left: 5px;
+    font-size: 11px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.master-play h5 .artist-name {
+    color: #a6a8b6;
+    font-size: 9px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.master-play .icon {
+    color: #a6a8b6;
+    font-size: 12px;
+}
+
+.master-play .middle-master {
+    width: 500px;
+    height: 100%;
+}
+
+.master-play .middle-master .controls i {
+    font-size: 0.8rem;
+    margin: 5px 15px;
+}
+
+.master-play .middle-master .controls .shuffle {
+    font-size: 17px;
+    width: 17px;
+    overflow: hidden;
+}
+
+.master-play .middle-master .controls #download-music {
+    font-size: 17px;
+    width: 20px;
+}
+.master-play .middle-master .progressbar {
+    height: 50%;
+}
+
+.master-play .middle-master .progressbar span {
+    font-size: 9px;
+    width: 30px;
+    padding: 2px;
+    color: #a6a8b6;
+}
+
+.master-play .middle-master .progressbar .bar {
+    position: relative;
+    width: 80%;
+    height: 2px;
+    margin: 0px 15px;
+}
+
+.master-play .middle-master .progressbar .bar .bar2 {
+    position: absolute;
+    top: 0;
+    background-color: #4729b5;
+    width: 400px;
+    height: 100%;
+    transition: 1s linear;
+}
+
+.master-play .middle-master .progressbar .bar .currPosition {
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+    transition: 1s linear;
+
+}
+
+.master-play .middle-master .progressbar .bar .currPosition::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5.5px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid rgb(125, 240, 125);
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 3px rgb(125, 240, 125);
+    ;
+}
+
+.master-play .middle-master .progressbar .bar input[type='range'] {
+    position: absolute;
+    accent-color: rgb(125, 240, 125);
+    width: 180%;
+    top: -7px;
+    cursor: pointer;
+    z-index: 5;
+    opacity: 0;
+}
+
+.master-play .right-master {
+    width: 200px;
+    height: 100%;
+    margin-right:15px ;
+}
+
+.master-play .right-master i {
+    position: relative;
+    top: 15px;
+    font-size: 12px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.master-play .right-master .volume {
+    position: relative;
+    width: 100px;
+    height: 2px;
+    top: 20px;
+    left: -20px;
+    background-color: #4729b5;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.master-play .right-master .volume i {
+    position: absolute;
+    font-size: 20px;
+    top: -7px;
+    left: -26px;
+    font-size: 15px;
+}
+
+.master-play .right-master .volume input {
+    position: absolute;
+    width: 100%;
+    top: 17px;
+    left: 0px;
+    cursor: pointer;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.master-play .right-master .volume .volbar {
+    position: absolute;
+    background-color: rgb(125, 240, 125);
+    height: 100%;
+    width: 50%;
+    top: 0;
+    transition: 1s linear;
+    cursor: pointer;
+}
+
+.right-master .volume .dot {
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+    transition: 1s linear;
+}
+
+.right-master .volume .dot::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5.5px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid rgb(125, 240, 125);
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 3px rgb(125, 240, 125);
+    ;
+}

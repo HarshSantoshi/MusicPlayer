@@ -1,0 +1,895 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Utility Classes */
+
+/* Flex */
+.f {
+    display: flex;
+}
+
+.fw {
+    flex-wrap: wrap;
+}
+
+.f-dc {
+    flex-direction: column;
+}
+
+/* Align Itmes */
+.a-c {
+    align-items: center;
+}
+
+.a-fs {
+    align-items: flex-start;
+}
+
+.a-fe {
+    align-items: flex-end;
+}
+
+/* Justify Items */
+.j-c {
+    justify-content: center;
+}
+
+.j-sb {
+    justify-content: space-between;
+}
+
+.j-sa {
+    justify-content: space-around;
+}
+
+.j-se {
+    justify-content: space-evenly;
+}
+
+.j-fe {
+    justify-content: flex-end;
+}
+
+.j-fs {
+    justify-content: flex-start;
+}
+
+/* Text */
+
+.t-c {
+    text-align: center;
+}
+
+.t-s {
+    text-align: start;
+}
+
+/* Color */
+.c-w {
+    color: white;
+}
+
+.c-p {
+    color: #a6a8b6;
+}
+
+/* Font-size */
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-17 {
+    font-size: 17px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-10 {
+    font-size: 10px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-25 {
+    font-size: 25px;
+}
+
+.cr-p {
+    cursor: pointer;
+}
+
+.tr {
+    background-color: transparent;
+}
+
+/* Padding */
+.p-20 {
+    padding: 20px;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+
+/* Margin */
+.m-10 {
+    margin: 10px;
+}
+
+.mb-2 {
+    margin-bottom: 5px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-50{
+    margin-bottom: 50px;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(12 16 39);
+}
+
+/* CSS of header  Starts*/
+.logo img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.logo img:hover {
+    transform: scale(1.2);
+    transition: all .2sec ease-in;
+}
+
+.upper {
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+
+.upper:hover {
+    color: #77767b;
+}
+
+.lower:hover {
+    color: #4729b5;
+}
+
+header {
+    width: 90%;
+    height: 7%;
+    margin: 10px auto;
+    position: fixed;
+    z-index: 7;
+}
+
+header .header-left {
+    width: 320px;
+    height: 100%;
+}
+
+header .header-left .left {
+    width: 150px;
+    height: 100%;
+}
+
+header .header-left .left .text {
+    width: 85px;
+    height: 60px;
+    font-size: 1rem;
+}
+
+header .header-right {
+    width: 550px;
+    height: 100%;
+}
+
+header .header-right .searchBar {
+    width: 40%;
+    height: 70%;
+    padding: 8px;
+    background-color: #12193e;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    text-align: left;
+}
+
+input[type="search"] {
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.searchBar i:hover {
+    transform: scale(1.1);
+
+}
+
+.right:hover {
+    transform: scale(1.1);
+    color: rgb(112, 171, 223);
+}
+
+/* CSS of header Ends */
+
+/*CSS of main Section Starts*/
+main {
+    width: 100%;
+    height: 600px;
+}
+
+main .container {
+    width: 75%;
+    height: 90%;
+    position: relative;
+    top: 10%;
+    bottom: 10%;
+}
+
+main .songs-list {
+    width: 25%;
+    height: 90%;
+    position: relative;
+    top: 10%;
+    bottom: 10%;
+}
+
+
+
+/*CSS of songs-List*/
+main .songs-list h1 {
+    font-size: 18px;
+    margin: 15px 0 0 20px;
+    font-weight: 600;
+}
+
+main .songs-list .playList {
+    width: 100%;
+    height: 400px;
+
+    margin-top: 10px;
+    overflow: auto;
+}
+
+main .songs-list .playList::-webkit-scrollbar {
+    display: none;
+}
+
+main .songs-list .playList li {
+    list-style: none;
+    position: relative;
+    padding: 5px 0 5px 20px;
+    margin-bottom: 6px;
+    transition: .2s linear;
+}
+
+main .songs-list .playList li:hover {
+    background-color: rgba(110, 109, 109, 0.1);
+}
+
+main .songs-list .playList li span {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+main .songs-list .playList li img {
+    height: 40px;
+    width: 40px;
+    margin: 0 15px;
+}
+
+main .songs-list .playList li h5 {
+    font-size: 11px;
+    width: 130px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+main .songs-list .playList li .fa-play{
+    font-size: 12px;
+}
+main .songs-list .playList li .fa-heart-o {
+    position: absolute;
+    right: 50px;
+    font-size: 12px;
+}
+
+main .songs-list .playList li .fa-heart-o:hover{
+    color: rgb(249, 223, 223);
+    font-size: 14px;
+}
+
+/*CSS of master Play*/
+main .master-play {
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(40 40 40);
+    bottom: 0px;
+    padding: 0px 20px;
+    z-index: 10;
+   
+}
+
+main .master-play .wave {
+    width: 30px;
+    height: 30px;
+    padding-bottom: 4px;
+    display: flex;
+    align-items: flex-end;
+    visibility: hidden;
+}
+
+main .master-play .wave .wave1 {
+    width: 3px;
+    height: 10px;
+    background-color: rgb(125, 240, 125);
+    margin-right: 3px;
+    border-radius: 8px 8px 0px 0px;
+    animation: unset;
+}
+
+main .master-play .wave .wave1:nth-child(2) {
+    height: 14px;
+    margin-right: 3.5px;
+    animation-delay: .4s;
+}
+
+main .master-play .wave .wave1:nth-child(3) {
+    height: 8px;
+    animation-delay: .8s;
+}
+
+/*Javascript*/
+main .master-play .active1 .wave1 {
+    animation: wave 0.5s ease-in-out infinite;
+}
+
+main .master-play .active1 .wave1:nth-child(2) {
+    animation-delay: .4s;
+}
+
+main .master-play .active1 .wave1:nth-child(3) {
+
+    animation-delay: .8s;
+}
+
+@keyframes wave {
+    0% {
+        height: 10px;
+    }
+
+    50% {
+        height: 15px;
+    }
+
+    100% {
+        height: 10px;
+    }
+}
+
+main .master-play img {
+    width: 40px;
+    height: 40px;
+}
+
+main .master-play h5 {
+    width: 80px;
+    margin-left: 5px;
+    font-size: 11px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+main .master-play h5 .artist-name {
+    color: #a6a8b6;
+    font-size: 9px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+main .master-play .icon {
+    color: #a6a8b6;
+    font-size: 12px;
+}
+
+main .master-play .middle-master {
+    width: 500px;
+    height: 100%;
+}
+
+main .master-play .middle-master .controls i {
+    font-size: 0.8rem;
+    margin: 5px 15px;
+}
+
+main .master-play .middle-master .controls .shuffle {
+    font-size: 17px;
+    width: 15px;
+    overflow: hidden;
+}
+
+main .master-play .middle-master .controls #download-music{
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+}
+main .master-play .middle-master .progressbar {
+    height: 50%;
+}
+
+main .master-play .middle-master .progressbar span {
+    font-size: 9px;
+    width: 30px;
+    padding: 2px;
+    color: #a6a8b6;
+}
+
+main .master-play .middle-master .progressbar .bar {
+    position: relative;
+    width: 80%;
+    height: 2px;
+    margin: 0px 15px;
+}
+
+main .master-play .middle-master .progressbar .bar .bar2{
+    position: absolute;
+    top: 0;
+    background-color: rgb(125, 240, 125);
+    width: 0%;
+    height: 100%;
+    transition: 0s linear;
+}
+
+main .master-play .middle-master .progressbar .bar .currPosition {
+    position: absolute;
+    top: -2px;
+    left: 0%;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+    transition: 0s linear;
+
+}
+
+main .master-play .middle-master .progressbar .bar .currPosition::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5.5px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid rgb(125, 240, 125);
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 3px rgb(125, 240, 125);
+    
+}
+
+main .master-play .middle-master .progressbar .bar input[type='range'] {
+    position: absolute;
+    accent-color: rgb(125, 240, 125);
+    width: 100%;
+    top: -1.5px;
+    cursor: pointer;
+    height: 5px;
+    z-index: 5;
+    opacity: 0;
+}
+
+main .master-play .right-master {
+    width: 200px;
+    height: 100%;
+    margin-right:15px ;
+}
+
+main .master-play .right-master i {
+    position: relative;
+    top: 15px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+main .master-play .right-master .volume {
+    position: relative;
+    width: 100px;
+    height: 2px;
+    top: 20px;
+    left: -20px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+main .master-play .right-master .volume i {
+    position: absolute;
+    font-size: 20px;
+    top: -6px;
+    left: -20px;
+    margin: 0px 3px;
+    font-size: 15px;
+}
+
+main .master-play .right-master .volume input {
+    position: absolute;
+    width: 100%;
+    top: -6px;
+    left: 0px;
+    cursor: pointer;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+main .master-play .right-master .volume .volbar {
+    position: absolute;
+    background-color: rgb(125, 240, 125);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    transition: 0s linear;
+    cursor: pointer;
+}
+
+main .master-play .right-master .volume .dot {
+    position: absolute;
+    top: -2px;
+    left: 100%;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+    transition: 0s linear;
+}
+
+main .master-play .right-master .volume .dot::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5.5px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid rgb(125, 240, 125);
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 3px rgb(125, 240, 125);
+}
+
+/*CSS of container*/
+main .container .content-container {
+    height: 100%;
+    width: 94%;
+    margin: 0px auto;
+    overflow: auto;
+}
+
+main .container .content-container::-webkit-scrollbar {
+    display: none;
+}
+
+main .container .content-container .latest-release .heading {
+    font-size: 0.9rem;
+}
+
+main .container .content-container .main-images {
+    height: 40%;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+main .container .content-container .main-images img {
+    height: 100%;
+    width: 32%;
+    cursor: pointer;
+}
+main .container .content-container .main-images img:hover{
+    height: 110%;
+    width: 140%;
+    box-shadow: inset 10px 10px 5px lightblue;
+    transition: .6s ease-in-out;
+}
+
+main .container .content-container .latest-release .song-item {
+    height: 70px;
+    width: 49%;
+    position: relative;
+    margin: 5px 5px 5px 0px;
+    cursor: pointer;
+}
+main .container .content-container .latest-release .song-item:hover {
+    background-color: #12193e;
+}
+
+main .container .content-container .latest-release .song-item .left {
+    height: 100%;
+    width: 70%;
+    line-height: 1.1rem;
+
+}
+
+main .container .content-container .latest-release .song-item .left img {
+    height: 95%;
+    width: 28%;
+
+}
+
+main .container .content-container .latest-release .song-item .left h5 {
+    font-size: 10px;
+    margin: 0px 5px;
+}
+
+main .container .content-container .latest-release .song-item .left h5 .Date {
+    font-size: 8px;
+    color: #77767b;
+}
+
+main .container .content-container .latest-release .song-item .right {
+    position: absolute;
+    right: 0;
+    width: 50px;
+    top: 5px;
+    text-align: center;
+}
+
+main .container .content-container .latest-release .song-item .right i,
+span {
+    font-size: 11px;
+    color: #93a8b3;
+}
+
+main .container .content-container .latest-release .song-item .right span {
+    font-size: 9px;
+}
+
+/*CSS of popular Artists*/
+main .container .content-container .popular-artists {
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+main .container .content-container .popular-artists .h4 .btns i {
+    color: #a4a8b4;
+    cursor: pointer;
+    font-size: 14px;
+    transition: .4s ease-in;
+}
+
+main .container .content-container .popular-artists .h4 .btns i:hover {
+    color: white;
+}
+
+main .container .content-container .popular-artists .artists {
+    width: 100%;
+    height: 80%;
+    margin: 10px 0px;
+    position: relative;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+main .container .content-container .popular-artists .artists::-webkit-scrollbar {
+    display: none;
+}
+
+main .container .content-container .popular-artists .artists .artists-card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0px 8px;
+    z-index: 1;
+    cursor: pointer;
+}
+main .container .content-container .popular-artists .artists a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+main .container .content-container .popular-artists .artists .artists-card i {
+    position: absolute;
+    top: 30%;
+    font-size: 10px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    padding: 1px 4px 0px 5px;
+    border: 1px solid white;
+}
+
+main .container .content-container .popular-artists .artists .artists-card img:hover {
+    background-color: #93a8b3;
+    opacity: 0.5;
+}
+
+main .container .content-container .popular-artists .artists .artists-card .artists-name {
+    font-size: 10px;
+    width: 70px;
+    text-align: center;
+    margin-top: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+main .container .content-container .diffSongs {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(16 22 66);
+    margin: 10px 0px;
+    position: relative;
+}
+
+main .container .content-container .diffSongs .stations {
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+
+main .container .content-container .diffSongs .stations .inner {
+    width: 80px;
+    height: 50px;
+    background-color: rgba(247, 247, 16, 0.918);
+    position: absolute;
+    top: 15px;
+}
+
+main .container .content-container .diffSongs .stations .middle {
+    width: 70px;
+    height: 55px;
+    background-color: rgb(216, 184, 24);
+    position: absolute;
+    top: 12px;
+    left: 5px;
+}
+
+main .container .content-container .diffSongs .stations .outer {
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+main .container .content-container .diffSongs .stations .outer .white-circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    left: auto;
+    top: 5px;
+    margin: 0px auto;
+}
+
+main .container .content-container .diffSongs .stations .outer .white-circle .orange-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: orange;
+    position: relative;
+    left: auto;
+    top: 7px;
+    margin: 0px auto;
+}
+
+main .container .content-container .diffSongs .stations .outer span {
+    color: white;
+    margin-left: 6px;
+}
+main .container .content-container .diffSongs .categories{
+    width:80%;
+    height: 100%;
+    position: relative;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+main .container .content-container .diffSongs .categories::-webkit-scrollbar{
+    display: none;
+}
+main .container .content-container .diffSongs .type {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+main .container .content-container .diffSongs .type img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    opacity: 0.7;
+    cursor: pointer;
+    position: relative;
+    top: -20px;
+}
+main .container .content-container .diffSongs .type img:hover {
+    opacity: 0.4;
+}
+
+main .container .content-container .diffSongs .type h5{
+    z-index: 1;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    top:25px;
+}
+main .container .content-container .diffSongs .type h5:hover{
+    cursor: pointer;
+}
+main .container .content-container .latest-English{
+    width: 100%;
+    height: 200px;
+    
+}
+main .container .content-container .latest-English .song-box{
+    width: 100px;
+    margin: 10px 5px;
+
+}
+main .container .content-container .latest-English .song-box img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+main .container .content-container .latest-English .song-box .imagename{
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+main .container .content-container .latest-English .song-box span{
+    font-size: 9px;
+}
+/* Dropdown */
+main .container .content-container .latest-release .song-item .right .dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2f2752;
+    min-width: 70px;
+    top: -4px;
+    right: 0px;
+    font-size: 9px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content li{
+    list-style: none;
+    padding: 4px 0px;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content li:hover{
+    background-color: #141b41;
+    font-size: 10px;
+
+  }
